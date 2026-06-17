@@ -46,8 +46,18 @@ body{
 
 /* ── VIEWS ── */
 .view{
-  position:fixed;inset:0; display:flex;align-items:center;justify-content:center;
-  transition:opacity 0.6s ease, transform 0.6s ease; overflow-y:auto;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:calc(var(--vh, 1vh) * 100);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  transition:opacity 0.6s ease, transform 0.6s ease;
+  overflow-y:auto;
 }
 .view.hidden{opacity:0;pointer-events:none;transform:scale(0.97);}
 .view.active{opacity:1;pointer-events:all;transform:scale(1);}
