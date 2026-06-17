@@ -76,7 +76,7 @@ body{
 
 .avatar-box {
   width: 140px; height: 180px;
-  background: url('ChatGPT_Image_Jun_17__2026__09_20_54_PM-removebg-preview.png') center/contain no-repeat;
+  background: url('./avatar.png') center/contain no-repeat;
   position: relative;
   image-rendering: pixelated;
   z-index: 2;
@@ -115,7 +115,7 @@ body{
 /* 5. Listening Scene (Specific Custom Headphone Avatar Asset) */
 .scene-listening { width: 260px; height: 200px; }
 .scene-listening .avatar-box { 
-  background: url('ChatGPT Image Jun 17, 2026, 09_40_01 PM.png') center/contain no-repeat;
+  background: url('./avatar-headphones.png') center/contain no-repeat;
   animation: listenBob 1.2s infinite alternate ease-in-out; 
 }
 .music-notes { position: absolute; top: 20px; right: 40px; font-size: 24px; color: var(--violet); animation: floatNotes 2s infinite ease-in-out; z-index: 1; }
@@ -290,7 +290,7 @@ body{
 
 <!-- MINECRAFT SOUNDTRACK TRACK -->
 <audio id="bg-music" autoplay loop>
-  <source src="Minecraft theme song (5 Minutes).mp3" type="audio/mpeg">
+  <source src="./music.mp3" type="audio/mpeg">
 </audio>
 <button class="music-toggle" id="musicBtn" onclick="toggleMusic()">♪ Vibe On</button>
 
